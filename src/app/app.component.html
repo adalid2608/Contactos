@@ -1,0 +1,14 @@
+<router-outlet></router-outlet>
+
+  <p *ngFor="let persona of listaPersonas" class="text-lg mx-5 font-extrabold flex gap-2 items-center" [class.text-blue-600] = "persona.sexo == 'M'" [class.text-fuchsia-500] = "persona.sexo == 'F'">
+    <img *ngIf="persona.sexo == 'M'" class="w-10 h-10" src="https://img.freepik.com/vector-premium/hombres-genero-signo-icono-vector-logo-plantilla-ilustracion-diseno-eps-10_822766-124.jpg" alt="Simbolo de sexo masculino">
+    <img *ngIf="persona.sexo == 'F'" class="w-10 h-10" src="https://img.freepik.com/vector-premium/simbolo-genero-rosa-mujer_277625-1824.jpg" alt="Simbolo de sexo femenino">
+    {{persona.nombre}}
+    <span class="text-black">{{persona.telefono}}</span>
+  </p>
+
+
+  
+  
+
+
